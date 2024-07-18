@@ -1,0 +1,33 @@
+.btn {
+  --size: 38px;
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+}
+
+.btn.left,
+.btn.left.disable {
+  background: url(../../icons/Arrow_left.svg) center / 100% 100% no-repeat;
+  transition: 0.3s;
+}
+.btn.right,
+.btn.right.disable {
+  background: url(../../icons/Arrow_right.svg) center / 100% 100% no-repeat;
+  transition: 0.3s;
+}
+
+.btn.left:hover {
+  background: url(../../icons/Arrow_left-active.svg) center / 100% 100%
+    no-repeat;
+  transition: 0.3s;
+}
+
+.btn.right:hover {
+  background: url(../../icons/Arrow_right-active.svg) center / 100% 100%
+    no-repeat;
+  transition: 0.3s;
+}
+.btn.left.disable,
+.btn.right.disable {
+  pointer-events: none;
+}
