@@ -52,14 +52,10 @@ const SlideList = () => {
     });
   };
 
-  console.log('ghfghfghfghfhfhfghfh');
   return (
     <div className={styles.slider__wrapper}>
       <div className={styles.top}>
-        <Title>
-          Есть всё, чтобы наполнить жизнь счастьем{' '}
-          {slide?.current?.getBoundingClientRect().width}
-        </Title>
+        <Title>Есть всё, чтобы наполнить жизнь счастьем </Title>
         <div className={styles.btns}>
           <Button direction="left" onClick={prev} disable={activeId === 0} />
           <Button
